@@ -1,15 +1,16 @@
 (function(){
 
-    let word = "madamimadam"
-    let newWord= word.split('');
-    let wordString= newWord.join();
-    let reverseWord =newWord.reverse();
-    let reverseString= reverseWord.join();
+    // let word = "madamimadam"
+    // let newWord= word.split('');
+    // let wordString= newWord.join();
+    // let reverseWord =newWord.reverse();
+    // let reverseString= reverseWord.join();
 
-
-    if (wordString == reverseString){
-      console.log("true")}
+function palindrome(word){
+    if (word.split('').reverse().join('') == word){
+      return true}
     else {
-      console.log("false")}
-
+      return false}
+}
+    module.exports = palindrome;
 })();
